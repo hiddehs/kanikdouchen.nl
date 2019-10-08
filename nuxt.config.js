@@ -1,4 +1,7 @@
+require("dotenv").config()
+
 import colors from 'vuetify/es5/util/colors'
+
 
 export default {
   mode: 'spa',
@@ -18,6 +21,9 @@ export default {
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+  },
+  env:{
+    sheetid: process.env.SHEET_ID
   },
   /*
    ** Customize the progress-bar color

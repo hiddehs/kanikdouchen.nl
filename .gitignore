@@ -1,6 +1,6 @@
 remote/node_modules
 remote/credentials.json
-
+remote/.env
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template

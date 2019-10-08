@@ -43,7 +43,7 @@ export default {
     loadSheet() {
       this.$axios
         .get(
-          'https://spreadsheets.google.com/feeds/list/1CweK23zvqyGfIyQAE-X4phghVxVDEjqtPwc1chuCZIE/3/public/values?alt=json'
+          'https://spreadsheets.google.com/feeds/list/' + this.$store.state.sheetid + '/3/public/values?alt=json'
         )
         .then((resp) => {
           const spreadsheet = resp.data

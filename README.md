@@ -2,9 +2,28 @@
 
 > front and node server for kanikdouchen.nl with GPIO readout via onoff
 
+## Configure Spreadsheets
+
+``` bash
+# copy example env
+cd remote && cp .env.example .env
+
+# change SHEET_ID into your Google Spreadsheet URL's id
+
+```
+
 ## Start Back-end
 
+``` bash
 
+# cd into remote directory
+cd remote
+# install dependencies
+yarn install
+# start node server
+node .
+
+```
 
 
 ## Front-end Build Setup

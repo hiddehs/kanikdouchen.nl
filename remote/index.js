@@ -1,12 +1,11 @@
-const moment = require("moment");
+const dotenv = require('dotenv').config({path:"../.env"});
+const moment = require('moment');
 const Gpio = require('onoff').Gpio;
 var GoogleSpreadsheet = require('google-spreadsheet');
 var async = require('async');
  
-
-
 // spreadsheet key is the long id in the sheets URL
-var doc = new GoogleSpreadsheet('1CweK23zvqyGfIyQAE-X4phghVxVDEjqtPwc1chuCZIE');
+var doc = new GoogleSpreadsheet(process.env.SHEET_ID);
 var sheet;
 
 let CurrentState, LastState = -1; // -1 = unkown, 0 = not active, 1 = active (douching)

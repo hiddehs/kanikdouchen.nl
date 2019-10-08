@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^8.1.0",
     "google-spreadsheet": "^2.0.8",
     "moment": "^2.24.0",
     "onoff": "^5.0.0"
