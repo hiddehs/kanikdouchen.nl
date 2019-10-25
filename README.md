@@ -2,6 +2,11 @@
 
 > front and node server for kanikdouchen.nl with GPIO readout via onoff
 
+## What is kanikdouchen.nl
+
+kanikdouchen.nl is a simple site to check if a bathroom is locked or not, so you can check anytime/anywhere if you can take a shower or not!
+
+
 ## Configure Spreadsheets
 
 ``` bash
