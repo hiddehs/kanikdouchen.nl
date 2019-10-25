@@ -4,8 +4,9 @@
 
     <h1 class="display-4 font-weight-bold">{{ antwoord }}</h1>
     <h4>Laatste activiteit: {{ LastChange }}</h4>
-    <h4><v-icon v-if="!showinfo" @click="showinfo = true">mdi-information</v-icon></h4>
-    <h4 v-if="showinfo">12 hr project by <a target="_blank" href="https://oliviersfunctionals.com">oliviersfunctionals</a>  <a target="_blank" href="https://hidde.dev">hidde.dev</a></h4>
+    <v-btn icon><v-icon v-if="!showinfo" @click="showinfo = true">mdi-information</v-icon></v-btn>
+    <h4 v-if="showinfo">12 hr project by <a target="_blank" href="https://oliviersfunctionals.com">oliviersfunctionals</a> & <a target="_blank" href="https://hidde.dev">hidde.dev</a></h4>
+    <v-btn v-if="showinfo" class="mt-3" href="https://github.com/hiddehs/kanikdouchen.nl" target="_blank"><v-icon left>mdi-github-circle</v-icon> Open Source</v-btn>
   </v-layout>
 </template>
 
@@ -23,7 +24,7 @@ export default {
       return this.CanDouche ? 'success' : 'red'
     },
     antwoord() {
-      return this.CanDouche ? 'JA' : 'NEE!'
+      return this.CanDouche ? 'JA!' : 'NEE!'
     }
   },
   watch: {
