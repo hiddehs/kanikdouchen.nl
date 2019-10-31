@@ -20,7 +20,8 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }]
   },
   env:{
     sheetid: process.env.SHEET_ID
